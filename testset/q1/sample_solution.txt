@@ -1,0 +1,3 @@
+    new_df = df.copy()
+    condition = (new_df[col2] > set_value1) & (new_df[col3] < set_value2)
+    new_df[col1] = new_df.apply(lambda row: row[col1] + 10 if condition[row.name] else row[col1], axis=1)

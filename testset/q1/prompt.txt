@@ -1,0 +1,35 @@
+def get_new_df(df, col1, col2, col3, set_value1, set_value2):
+    """
+    Create a new DataFrame with an updated col1, which contains col1 incremented by 10
+    if col2 is greater than set_value1 and col3 is less than set_value2.
+
+    Parameters:
+    - df (DataFrame): Original DataFrame
+    - col1 (str): Name of the column to be updated
+    - col2 (str): Name of the second column to consider
+    - col3 (str): Name of the third column to consider
+    - set_value1 (int): Threshold value to compare with col2
+    - set_value2 (int): Threshold value to compare with col3
+
+    Returns:
+    - DataFrame: New DataFrame with an updated col1.
+
+    Example:
+    ---------
+    Input DataFrame:
+    ----------------
+      datetime  col1  col2  col3
+    0 2021-04-10    25    55    45
+
+    Function call:
+    --------------
+    get_new_df_2(df, 'col1', 'col2', 'col3', 50, 50)
+
+    Output DataFrame:
+    -----------------
+      datetime  col1  col2  col3
+    0 2021-04-10    35    55    45
+    """
+<FILL_ME>
+
+    return new_df

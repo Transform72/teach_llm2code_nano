@@ -1,0 +1,3 @@
+    new_df = df.copy()
+    condition = new_df[col3] > set_value
+    new_df['diff'] = new_df.apply(lambda row: abs(row[col1] - row[col2]) if condition[row.name] else row[col1] + row[col2], axis=1)

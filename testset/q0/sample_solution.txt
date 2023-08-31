@@ -1,0 +1,3 @@
+    new_df = df.copy()
+    condition = new_df[col3] > set_value
+    new_df['prod'] = new_df.apply(lambda row: row[col1] * row[col2] if condition[row.name] else row[col3], axis=1)

@@ -1,0 +1,33 @@
+def get_new_df(df, col1, col2, col3, set_value):
+    """
+    Create a new DataFrame with an additional column 'prod', which contains the product of col1 and col2
+    if col3 is greater than set_value; otherwise, it contains the value from col3.
+
+    Parameters:
+    - df (DataFrame): Original DataFrame
+    - col1 (str): Name of the first column to consider
+    - col2 (str): Name of the second column to consider
+    - col3 (str): Name of the third column to consider
+    - set_value (int): Threshold value to compare with col3
+
+    Returns:
+    - DataFrame: New DataFrame with an additional 'prod' column.
+
+    Example:
+    ---------
+    Input DataFrame:
+    ----------------
+      datetime  col1  col2  col3
+    0 2021-04-10    5    50    60
+
+    Function call:
+    --------------
+    get_new_df_1(df, 'col1', 'col2', 'col3', 50)
+
+    Output DataFrame:
+    -----------------
+      datetime  col1  col2  col3   prod
+    0 2021-04-10    5    50    60  250
+    """
+<FILL_ME>
+    return new_df
