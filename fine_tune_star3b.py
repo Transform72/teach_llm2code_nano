@@ -143,9 +143,8 @@ if __name__ == "__main__":
         attention_mask = [1 if token_id != tokenizer.pad_token_id else 0 for token_id in example['input_ids']]
         return {'attention_mask': attention_mask}
     train_dataset = train_dataset.map(add_attention_mask,
-                                        batched=True,
-                                        batch_size=10,
-                                        num_proc=10)
+                                        batched=False,
+                                        num_proc=1)
     train_dataset.set_format("pt")
 
     data_module = dict(train_dataset=train_dataset)
